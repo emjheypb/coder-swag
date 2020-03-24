@@ -1,5 +1,5 @@
 # coder-swag
-Mobile shop demo
+Mobile shop
 
 - tableview (CategoryCell.swift, Category.swift)
 - service & singleton & static data (DataService.swift)
