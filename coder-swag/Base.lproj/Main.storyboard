@@ -76,17 +76,17 @@
                     <navigationItem key="navigationItem" title="CODERSWAG" id="ECt-JC-kYF"/>
                     <connections>
                         <outlet property="categoryTable" destination="jKF-UG-915" id="HFs-1G-ldS"/>
-                        <segue destination="UO0-Cw-EQK" kind="show" id="U87-TY-cGB"/>
+                        <segue destination="UO0-Cw-EQK" kind="show" identifier="ProductsVC" id="U87-TY-cGB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="126.5625"/>
         </scene>
-        <!--View Controller-->
+        <!--ProductsVC-->
         <scene sceneID="lEG-9U-tl2">
             <objects>
-                <viewController id="UO0-Cw-EQK" sceneMemberID="viewController">
+                <viewController id="UO0-Cw-EQK" customClass="ProductsVC" customModule="coder_swag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jjA-sf-HSf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,20 +97,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jtP-Y6-wwa">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jtP-Y6-wwa">
                                 <rect key="frame" x="0.0" y="64" width="414" height="744"/>
                                 <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wXM-ko-4TX">
-                                    <size key="itemSize" width="195" height="320"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wXM-ko-4TX">
+                                    <size key="itemSize" width="200" height="320"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="MFK-IK-nkq" customClass="ProductCell" customModule="coder_swag" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="MFK-IK-nkq" customClass="ProductCell" customModule="coder_swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="320"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xwP-3y-NU0">
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="XW7-Ik-n8x">
                                             <rect key="frame" x="0.0" y="0.0" width="200" height="320"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -140,14 +140,14 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="ziG-c7-SrT" firstAttribute="leading" secondItem="xwP-3y-NU0" secondAttribute="leading" constant="8" id="3ej-qN-XG6"/>
-                                                <constraint firstItem="XNp-W7-Ate" firstAttribute="top" secondItem="xwP-3y-NU0" secondAttribute="top" id="6G1-9H-VxS"/>
+                                                <constraint firstItem="ziG-c7-SrT" firstAttribute="leading" secondItem="XW7-Ik-n8x" secondAttribute="leading" constant="8" id="3ej-qN-XG6"/>
+                                                <constraint firstItem="XNp-W7-Ate" firstAttribute="top" secondItem="XW7-Ik-n8x" secondAttribute="top" id="6G1-9H-VxS"/>
                                                 <constraint firstAttribute="trailing" secondItem="bnl-zo-r3w" secondAttribute="trailing" constant="8" id="Bk0-PL-BBm"/>
-                                                <constraint firstItem="bnl-zo-r3w" firstAttribute="leading" secondItem="xwP-3y-NU0" secondAttribute="leading" constant="8" id="GHB-NN-UND"/>
+                                                <constraint firstItem="bnl-zo-r3w" firstAttribute="leading" secondItem="XW7-Ik-n8x" secondAttribute="leading" constant="8" id="GHB-NN-UND"/>
                                                 <constraint firstAttribute="trailing" secondItem="ziG-c7-SrT" secondAttribute="trailing" constant="8" id="LKT-XH-pTn"/>
                                                 <constraint firstItem="ziG-c7-SrT" firstAttribute="top" secondItem="bnl-zo-r3w" secondAttribute="bottom" constant="8" id="NAQ-xQ-kcl"/>
                                                 <constraint firstAttribute="trailing" secondItem="XNp-W7-Ate" secondAttribute="trailing" id="Pet-zT-Kag"/>
-                                                <constraint firstItem="XNp-W7-Ate" firstAttribute="leading" secondItem="xwP-3y-NU0" secondAttribute="leading" id="U2w-SE-9A6"/>
+                                                <constraint firstItem="XNp-W7-Ate" firstAttribute="leading" secondItem="XW7-Ik-n8x" secondAttribute="leading" id="U2w-SE-9A6"/>
                                                 <constraint firstItem="bnl-zo-r3w" firstAttribute="top" secondItem="XNp-W7-Ate" secondAttribute="bottom" constant="8" id="rQw-cN-5Ch"/>
                                             </constraints>
                                         </collectionViewCellContentView>
@@ -162,7 +162,7 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="DCs-74-Bc3" firstAttribute="leading" secondItem="prj-rT-K3C" secondAttribute="leading" constant="20" id="23V-Ys-BR9"/>
                             <constraint firstItem="DCs-74-Bc3" firstAttribute="top" secondItem="prj-rT-K3C" secondAttribute="top" constant="30" id="56D-ek-nZ4"/>
@@ -175,6 +175,9 @@
                         <viewLayoutGuide key="safeArea" id="prj-rT-K3C"/>
                     </view>
                     <navigationItem key="navigationItem" id="Odx-6K-w9q"/>
+                    <connections>
+                        <outlet property="productsCollection" destination="jtP-Y6-wwa" id="G9W-MB-1eT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XPX-mK-AHD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
