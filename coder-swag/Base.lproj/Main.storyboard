@@ -21,11 +21,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jKF-UG-915">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jKF-UG-915">
                                 <rect key="frame" x="0.0" y="64" width="414" height="744"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="150" id="jf6-2b-kwe" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="150" id="jf6-2b-kwe" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jf6-2b-kwe" id="Qwc-m3-lwY">
@@ -33,7 +33,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="ALZ-j5-olb">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                                    <rect key="frame" x="0.0" y="3" width="414" height="144"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIGITAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wh0-Jd-bYN">
                                                     <rect key="frame" x="20" y="61.5" width="374" height="27.5"/>
@@ -45,8 +45,8 @@
                                             <constraints>
                                                 <constraint firstItem="ALZ-j5-olb" firstAttribute="leading" secondItem="Qwc-m3-lwY" secondAttribute="leading" id="2Lu-Hl-SfJ"/>
                                                 <constraint firstItem="wh0-Jd-bYN" firstAttribute="centerY" secondItem="Qwc-m3-lwY" secondAttribute="centerY" id="2ks-PO-hUq"/>
-                                                <constraint firstAttribute="bottom" secondItem="ALZ-j5-olb" secondAttribute="bottom" id="7XR-Ko-t2G"/>
-                                                <constraint firstItem="ALZ-j5-olb" firstAttribute="top" secondItem="Qwc-m3-lwY" secondAttribute="top" id="Byt-lR-Vqc"/>
+                                                <constraint firstAttribute="bottom" secondItem="ALZ-j5-olb" secondAttribute="bottom" constant="3" id="7XR-Ko-t2G"/>
+                                                <constraint firstItem="ALZ-j5-olb" firstAttribute="top" secondItem="Qwc-m3-lwY" secondAttribute="top" constant="3" id="Byt-lR-Vqc"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="wh0-Jd-bYN" secondAttribute="trailing" id="C6M-yM-BO1"/>
                                                 <constraint firstAttribute="trailing" secondItem="ALZ-j5-olb" secondAttribute="trailing" id="WoN-Iv-OIf"/>
                                                 <constraint firstItem="wh0-Jd-bYN" firstAttribute="centerX" secondItem="Qwc-m3-lwY" secondAttribute="centerX" id="alr-Kn-w7h"/>

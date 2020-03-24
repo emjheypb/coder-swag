@@ -15,6 +15,7 @@
 		5FFB148A2429CA0E00E9D431 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FFB14882429CA0E00E9D431 /* LaunchScreen.storyboard */; };
 		5FFB14952429D10700E9D431 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFB14942429D10700E9D431 /* CategoryCell.swift */; };
 		5FFB14972429D39600E9D431 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFB14962429D39600E9D431 /* Category.swift */; };
+		5FFB149A2429D5F000E9D431 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFB14992429D5F000E9D431 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		5FFB148B2429CA0E00E9D431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FFB14942429D10700E9D431 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		5FFB14962429D39600E9D431 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		5FFB14992429D5F000E9D431 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		5FFB147C2429CA0B00E9D431 /* coder-swag */ = {
 			isa = PBXGroup;
 			children = (
+				5FFB14982429D5D800E9D431 /* Services */,
 				5FFB14912429CB2B00E9D431 /* Model */,
 				5FFB14922429CB3300E9D431 /* View */,
 				5FFB14932429CB3800E9D431 /* Controller */,
@@ -95,6 +98,14 @@
 				5FFB14812429CA0B00E9D431 /* CategoriesVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		5FFB14982429D5D800E9D431 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5FFB14992429D5F000E9D431 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +182,7 @@
 				5FFB14822429CA0B00E9D431 /* CategoriesVC.swift in Sources */,
 				5FFB14972429D39600E9D431 /* Category.swift in Sources */,
 				5FFB147E2429CA0B00E9D431 /* AppDelegate.swift in Sources */,
+				5FFB149A2429D5F000E9D431 /* DataService.swift in Sources */,
 				5FFB14802429CA0B00E9D431 /* SceneDelegate.swift in Sources */,
 				5FFB14952429D10700E9D431 /* CategoryCell.swift in Sources */,
 			);
