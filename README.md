@@ -7,4 +7,4 @@ Mobile shop
 - segue (CategoriesVC.swift)
 - collectionview (ProductCell.swift, Product.swift, ProductsVC.swift)
 
-<img src="Index.png" width="400"> <img src="Collection View.png" width="400">
+<img src="Index.png" width="250"> <img src="Collection View.png" width="250">

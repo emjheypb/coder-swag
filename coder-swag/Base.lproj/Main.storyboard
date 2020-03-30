@@ -99,7 +99,7 @@
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jtP-Y6-wwa">
                                 <rect key="frame" x="0.0" y="64" width="414" height="744"/>
-                                <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wXM-ko-4TX">
                                     <size key="itemSize" width="200" height="320"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -135,7 +135,7 @@
                                                         <constraint firstAttribute="height" constant="20" id="p9I-MV-Qhc"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
-                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -151,7 +151,6 @@
                                                 <constraint firstItem="bnl-zo-r3w" firstAttribute="top" secondItem="XNp-W7-Ate" secondAttribute="bottom" constant="8" id="rQw-cN-5Ch"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                                         <size key="customSize" width="200" height="320"/>
                                         <connections>
                                             <outlet property="productImage" destination="XNp-W7-Ate" id="6H7-YJ-VZ2"/>
@@ -162,7 +161,6 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="DCs-74-Bc3" firstAttribute="leading" secondItem="prj-rT-K3C" secondAttribute="leading" constant="20" id="23V-Ys-BR9"/>
                             <constraint firstItem="DCs-74-Bc3" firstAttribute="top" secondItem="prj-rT-K3C" secondAttribute="top" constant="30" id="56D-ek-nZ4"/>
